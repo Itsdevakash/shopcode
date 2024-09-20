@@ -165,7 +165,7 @@ const Orders = ()=>{
                                         <td>{item.email}</td>
                                         <td>{item.mobile}</td>
                                         <td className="capitalize">{item.product}</td>
-                                        <td>₹{item.amount.toLocaleString()}</td>
+                                        <td>₹ {item.amount.toLocaleString()}</td>
                                         <td>{item.date}</td>
                                         <td className="capitalize">
                                             <select className="border p-1 border-gray-200">

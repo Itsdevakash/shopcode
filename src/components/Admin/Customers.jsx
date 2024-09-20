@@ -1,42 +1,46 @@
 import { useState } from "react"
 import Layout from "./Layout"
 
-const Payments = ()=>{
-    const [payment, setPayment] = useState([
+const Customers = ()=>{
+    const [customers, setCustomers] = useState([
         {
             img: '/images/avt.avif',
             customerName: 'er akash',
             email: 'erakash@gmail.com',
             mobile: '+91 9472395194',        
-            address: 'Varanjasi',   
-            amount: 5000,     
+            address: 'Varanjasi',        
             date: '12-10-2024 10:15:14 Am'           
         },
         {
-          img: '/images/avt.avif',
-          customerName: 'er akash',
-          email: 'erakash@gmail.com',
-          mobile: '+91 9472395194',        
-          address: 'Varanjasi',   
-          amount: 5000,     
-          date: '12-10-2024 10:15:14 Am'           
-      },
-    {
-      img: '/images/avt.avif',
-      customerName: 'er akash',
-      email: 'erakash@gmail.com',
-      mobile: '+91 9472395194',        
-      address: 'Varanjasi',   
-      amount: 5000,     
-      date: '12-10-2024 10:15:14 Am'           
-  },
-      
+            img: '/images/avt.avif',
+            customerName: 'er akash',
+            email: 'erakash@gmail.com',
+            mobile: '+91 9472395194',        
+            address: 'Varanjasi',        
+            date: '12-10-2024 10:15:14 Am'           
+        } ,
+        {
+            img: '/images/avt.avif',
+            customerName: 'er akash',
+            email: 'erakash@gmail.com',
+            mobile: '+91 9472395194',        
+            address: 'Varanjasi',        
+            date: '12-10-2024 10:15:14 Am'           
+        } ,
+        {
+            img: '/images/avt.avif',
+            customerName: 'er akash',
+            email: 'erakash@gmail.com',
+            mobile: '+91 9472395194',        
+            address: 'Varanjasi',        
+            date: '12-10-2024 10:15:14 Am'           
+        } ,   
     ])
 
     return (
         <Layout>
             <div>
-                <h1 className="text-xl font-semibold">Payments</h1>
+                <h1 className="text-xl font-semibold">Customers</h1>
                 <div className="mt-6">
                     <table className="w-full">
                         <thead>
@@ -44,14 +48,14 @@ const Payments = ()=>{
                                 <th className="p-4">Customer`s Name</th>
                                 <th>Email</th>
                                 <th>Mobile</th>    
-                                <th>Amount</th>                              
+                                <th>Address</th>                              
                                                          
                             </tr>
                         </thead>
 
                         <tbody>
                             {
-                                payment.map((item, index)=>(
+                                customers.map((item, index)=>(
                                     <tr key={index} style={{
                                         background: (index+1)%2 === 0 ? '#f1f5f9' : 'white'
                                     }}>
@@ -69,7 +73,7 @@ const Payments = ()=>{
                                             </td>
                                         <td>{item.email}</td>
                                         <td>{item.mobile}</td>                                     
-                                        <td>₹ {item.amount.toLocaleString()}</td>                                  
+                                        <td>{item.address}</td>                                  
                                       
                                       
                                     </tr>
@@ -83,4 +87,4 @@ const Payments = ()=>{
     )
 }
 
-export default Payments
+export default Customers
