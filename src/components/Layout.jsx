@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-const Layout=({childen})=>{
+const Layout = ({children})=>{
     const menus =[
     {
         lable:"Home",
@@ -54,7 +54,7 @@ const Layout=({childen})=>{
 </nav>
   
  <div>
-    {childen}
+ {children}
  </div>
 
   <footer className="bg-black text-white py-16 ">
