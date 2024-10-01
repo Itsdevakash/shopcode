@@ -13,6 +13,12 @@ import Setting from './components/Admin/Setting'
 import Customers from './components/Admin/Customers'
 import Admin from './components/Admin'
 import Home from './components/Home'
+import Category from './components/Category'
+import Product from './components/Product'
+import Login from './components/Login'
+import Signup from './components/Signup'
+import 'animate.css';
+import Contact from './components/Contact'
 
 const App = ()=>{
   return (
@@ -20,6 +26,11 @@ const App = ()=>{
       <Routes>
 
         <Route path="/" element={<Home />} />
+        <Route path="/category" element={<Category />} />
+        <Route path="/products" element={<Product />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup/>} />
+        <Route path="/contact-us" element={<Contact/>} />
         <Route path="/admin" >
           <Route path="dashboard" element={<Dashboard />} />
           <Route path="customers" element={<Customers />} />

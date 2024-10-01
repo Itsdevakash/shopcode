@@ -6,7 +6,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { useState } from "react";
 
-const Home = ()=>{
+const Product = ()=>{
 
 
     const [products, setProducts] = useState([
@@ -80,39 +80,12 @@ const Home = ()=>{
     return (
         <Layout>
             <div>
-                <header>
-                <Swiper
-                    pagination={true}
-                    navigation={true}
-                    modules={[Navigation, Pagination]}
-                    slidesPerView={1}
-                >
-                    <SwiperSlide>
-                        <img src="/images/p1.jpg" />
-                    </SwiperSlide>
-
-                    <SwiperSlide>
-                        <img src="/images/p2.jpg" />
-                    </SwiperSlide>
-
-                    <SwiperSlide>
-                        <img src="/images/p3.jpg" />
-                    </SwiperSlide>
-
-                    <SwiperSlide>
-                        <img src="/images/p4.jpg" />
-                    </SwiperSlide>
-
-                    <SwiperSlide>
-                        <img src="/images/p5.jpg" />
-                    </SwiperSlide>
-                </Swiper>
-                </header>
+              
 
                 <div className="md:p-16 p-8">
-                    <h1 className="text-3xl font-bold text-center">Latest Products</h1>
+                    <h1 className="text-3xl font-bold text-center">Our Products</h1>
                     <p className="text-center mx-auto text-gray-600 md:w-7/12 mt-2 mb-16">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod accusantium iusto, consequatur, officiis sapiente iure nisi aspernatur est corporis dolor ratione adipisci</p>
-                    <div className="md:w-10/12 mx-auto grid md:grid-cols-4 grid-cols-1 gap-12">
+                    <div className="md:w-10/12 mx-auto grid md:grid-cols-4 gap-12">
                         {
                             products.map((item, index)=>(
                                 <div key={index} className="bg-white shadow-lg border">
@@ -142,4 +115,4 @@ const Home = ()=>{
     
 }
 
-export default Home
+export default Product
