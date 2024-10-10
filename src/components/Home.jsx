@@ -125,10 +125,10 @@ const Home = ()=>{
                                             <label className="text-gray-600">({item.discount}%)</label>
                                         </div>
                                         <button className="bg-green-500 py-2 w-full rounded text-white font-semibold mt-4">
-                                        <i class="ri-clipboard-line"></i>   Buy Now
+                                        <i className="ri-clipboard-line"></i>   Buy Now
                                             </button>
                                         <button className="bg-rose-500 py-2 w-full rounded text-white font-semibold mt-2">                                            
-                                        <i class="ri-shopping-cart-line"></i>  Add to Cart
+                                        <i className="ri-shopping-cart-line"></i>  Add to Cart
                                             </button>
                                     </div>
                                 </div>
